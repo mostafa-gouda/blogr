@@ -61,11 +61,10 @@ button {
 
 .container_intro{
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
-  height: calc(65vh - 8rem);
+  height: calc(80vh - 8rem);
 }
 
 
@@ -88,15 +87,16 @@ button {
 .description_light{
   font-size: 1.2rem;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 .cta{
   display: flex;
+  gap: .5rem;
 }
 .learn_cta {
   background-color: transparent;
   border: 1px solid hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
-  margin-left: 1rem;
 }
 
 .learn_cta:hover {
