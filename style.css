@@ -81,10 +81,14 @@ button {
 
 .description_bold {
   font-size: 3.5rem;
-  text-align: center;
   font-weight: normal;
+  margin-bottom: 1rem;
 }
 
+.description_light{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 .cta{
   display: flex;
 }

@@ -162,4 +162,7 @@ nav {
     );
     color: white;
   }
+  .description_bold{
+      font-size: 2.5rem;
+  }
 }
