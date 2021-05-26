@@ -1,0 +1,165 @@
+.menu_button {
+  display: none;
+  padding: 0;
+  width: auto;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+.intro_logo{
+    display: none;
+    position: absolute;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav_items {
+  display: flex;
+  flex: 6;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav_item:hover > a {
+  text-decoration: underline;
+}
+
+.nav_item:focus-within img {
+  transition: all 400ms;
+  transform: rotate(180deg);
+}
+
+.sub_items {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 51%);
+  padding: 0 2rem;
+  margin-top: 1rem;
+  width: 9%;
+}
+.sub_items li:first-of-type {
+  margin-top: 1.5rem;
+}
+.sub_items li:last-of-type {
+  margin-bottom: 1.5rem;
+}
+.sub_items li {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+.sub_items li:hover {
+  color: black;
+}
+.nav_item:focus-within .sub_items {
+  visibility: visible;
+  max-height: 500px;
+  transition: max-height 700ms linear, padding 300ms linear;
+}
+
+.login_btn {
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.signup_btn:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+}
+
+.nav_buttons {
+  display: flex;
+  flex: 1;
+}
+
+@media only screen and (max-width: 955px) {
+  .wrapper {
+    background-size: 300%;
+  }
+  .container_intro{
+    height: calc(85vh - 8rem);
+  }
+  nav,
+  .nav_items,
+  .nav_buttons {
+    flex-direction: column;
+  }
+  .intro_logo{
+      display: block;
+  }
+  .nav_items,
+  .nav_buttons {
+    background-color: #fff;
+  }
+  nav {
+    position: absolute;
+    right: -120%;
+    transition: all 300ms;
+  }
+  .menu_button {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1000000;
+  }
+  .active_nav {
+    right: 0;
+  }
+  .nav_items {
+    width: 100%;
+    padding: 2rem 0;
+    color: black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav_buttons {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: -4rem;
+    align-items: center;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0 0.5rem 3rem -2rem rgb(49, 43, 43);
+  }
+  .sub_items {
+    position: static;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    background-color: hsl(0, 8%, 95%);
+  }
+
+  .login_btn {
+    color: black;
+  }
+  .signup_btn {
+    background-image: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    color: white;
+  }
+}

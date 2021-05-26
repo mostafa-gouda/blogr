@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="nav.css" />
+
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="container container_intro">
+        <button class="menu_button">☰</button>
+        <a class="intro_logo"><img src="images/logo.svg" alt="" /></a>
+        <nav>
+          <a href=""><img src="images/logo.svg" alt="" /></a>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <div>
+                <a href="/">Product</a>
+                <img src="images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="sub_items">
+                <li><a href="">Overview</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav_item">
+              <div>
+                <a href="/">Company</a>
+                <img src="images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="sub_items">
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav_item">
+              <div>
+                <a href="">Connect</a>
+                <img src="images/icon-arrow-light.svg" alt="" />
+              </div>
+              <ul class="sub_items">
+                <li><a href="">Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav_buttons">
+            <button class="login_btn">Login</button>
+            <button class="signup_btn">Sign Up</button>
+          </div>
+        </nav>
+        <div class="intro">
+          <h1 class="description_bold">A modern publishing platform</h1>
+          <div class="description_light">
+            Grow your audience and build your online brand
+          </div>
+          <div class="cta">
+            <button class="start_cta">Start for Free</button>
+            <button class="learn_cta">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn -->
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+</body>
+<script>
+
+  const links = document.querySelectorAll("a");
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+  });
+
+  const menuBtn = document.querySelector(".menu_button");
+  menuBtn.addEventListener("click", e => {
+    const nav = document.querySelector("nav");
+    const logo = document.querySelector(".intro_logo");
+    logo.style.display = logo.style.display === 'none' ? '' : 'none';
+    nav.classList.toggle("active_nav");
+    menuBtn.innerHTML = nav.classList.contains("active_nav")? "✖" : "☰";
+  })
+
+  const navArrows = document.querySelectorAll(".nav_item img");
+  if (window.innerWidth < 955) {
+    navArrows.forEach((element) => {
+      element.src = "images/icon-arrow-dark.svg";
+    });
+  }
+</script>
+
+</html>
