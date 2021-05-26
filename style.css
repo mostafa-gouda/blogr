@@ -61,6 +61,7 @@ button {
 
 .container_intro{
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
@@ -75,6 +76,7 @@ button {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .description_bold {
@@ -83,7 +85,9 @@ button {
   font-weight: normal;
 }
 
-
+.cta{
+  display: flex;
+}
 .learn_cta {
   background-color: transparent;
   border: 1px solid hsl(0, 0%, 100%);
