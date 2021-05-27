@@ -141,6 +141,13 @@
     });
   });
 
+  const nav_items = document.querySelectorAll(".nav_item");
+  nav_items.forEach((nav_item) => {
+    nav_item.addEventListener("click", (e) => {
+      nav_item.querySelector(".sub_items").classList.toggle("active_item")
+    });
+  });
+
   const menuBtn = document.querySelector(".menu_button");
   menuBtn.addEventListener("click", e => {
     const nav = document.querySelector("nav");

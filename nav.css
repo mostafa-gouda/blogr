@@ -63,7 +63,8 @@ nav {
 .sub_items li:hover {
   color: black;
 }
-.nav_item:focus-within .sub_items {
+
+.active_item {
   visibility: visible;
   max-height: 500px;
   transition: max-height 700ms linear, padding 300ms linear;
