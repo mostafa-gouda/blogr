@@ -1,170 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="nav.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
 
-  <title>Frontend Mentor | [Blogr]</title>
-</head>
-
-<body>
-  <header>
-    <div class="wrapper">
-      <div class="container container_intro">
-        <button class="menu_button">☰</button>
-        <a class="intro_logo"><img src="images/logo.svg" alt="" /></a>
-        <nav>
-          <a href=""><img src="images/logo.svg" alt="" /></a>
-          <ul class="nav_items">
-            <li class="nav_item">
-              <div>
-                <a href="/">Product</a>
-                <img src="images/icon-arrow-light.svg" alt="" />
-              </div>
-              <ul class="sub_items">
-                <li><a href="">Overview</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Integrations</a></li>
-              </ul>
-            </li>
-            <li class="nav_item">
-              <div>
-                <a href="/">Company</a>
-                <img src="images/icon-arrow-light.svg" alt="" />
-              </div>
-              <ul class="sub_items">
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Careers</a></li>
-              </ul>
-            </li>
-            <li class="nav_item">
-              <div>
-                <a href="">Connect</a>
-                <img src="images/icon-arrow-light.svg" alt="" />
-              </div>
-              <ul class="sub_items">
-                <li><a href="">Contact</a></li>
-                <li><a href="">Newsletter</a></li>
-                <li><a href="">LinkedIn</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="nav_buttons">
-            <button class="login_btn">Login</button>
-            <button class="signup_btn">Sign Up</button>
-          </div>
-        </nav>
-        <div class="intro">
-          <h1 class="description_bold">A modern publishing platform</h1>
-          <div class="description_light">
-            Grow your audience and build your online brand
-          </div>
-          <div class="cta">
-            <button class="start_cta">Start for Free</button>
-            <button class="learn_cta">Learn More</button>
+  <body>
+    <header>
+      <div class="wrapper-intro">
+        <div class="container container_intro">
+          <button class="menu_button">☰</button>
+          <a class="intro_logo"><img src="images/logo.svg" alt="" /></a>
+          <nav>
+            <a href=""><img src="images/logo.svg" alt="" /></a>
+            <ul class="nav_items">
+              <li class="nav_item">
+                <div>
+                  <a href="/">Product</a>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </div>
+                <ul class="sub_items">
+                  <li><a href="">Overview</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Marketplace</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Integrations</a></li>
+                </ul>
+              </li>
+              <li class="nav_item">
+                <div>
+                  <a href="/">Company</a>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </div>
+                <ul class="sub_items">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav_item">
+                <div>
+                  <a href="">Connect</a>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </div>
+                <ul class="sub_items">
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Newsletter</a></li>
+                  <li><a href="">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_buttons">
+              <button class="login_btn">Login</button>
+              <button class="signup_btn">Sign Up</button>
+            </div>
+          </nav>
+          <div class="intro">
+            <h1 class="description_bold">A modern publishing platform</h1>
+            <div class="description_light">
+              Grow your audience and build your online brand
+            </div>
+            <div class="cta">
+              <button class="start_cta">Start for Free</button>
+              <button class="learn_cta">Learn More</button>
+            </div>
           </div>
         </div>
       </div>
+    </header>
+
+    <main>
+      <section class="future">
+        <h2>Designed for the future</h2>
+        <div class="container features-container">
+          <div class="features">
+            <div class="feature">
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Robust content management</h3>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+          <img
+            src="images/illustration-editor-desktop.svg"
+            alt="editor image"
+            class="editor_img"
+          />
+        </div>
+      </section>
+
+      <section class="state">
+        <div class="wrapper-state">
+          <div class="container container-state">
+            <img src="images/illustration-phones.svg" alt="" />
+            <div class="text">
+              <h2>State of the Art Infrastructure</h2>
+              <p>
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="laptop">
+        <div class="container laptop-container">
+          <img
+            src="images/illustration-laptop-desktop.svg"
+            alt="laptop image"
+            class="laptop_img"
+          />
+          <div class="advantages">
+            <div class="advantage">
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <div class="advantage">
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-container">
+        <a class="footer_logo"><img src="images/logo.svg" alt="" /></a>
+        <div class="footer_item">
+          <h5>Product</h5>
+          <ul class="footer_subitems">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h5>Company</h5>
+          <ul class="footer_subitems">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h5>Connect</h5>
+          <ul class="footer_subitems">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </header>
-
-  <!-- 
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn -->
-
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </div>
-</body>
-<script>
-
-  const links = document.querySelectorAll("a");
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
+  </body>
+  <script>
+    const links = document.querySelectorAll("a");
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
     });
-  });
 
-  const nav_items = document.querySelectorAll(".nav_item");
-  nav_items.forEach((nav_item) => {
-    nav_item.addEventListener("click", (e) => {
-      nav_item.querySelector(".sub_items").classList.toggle("active_item")
+    const nav_items = document.querySelectorAll(".nav_item");
+    nav_items.forEach((nav_item) => {
+      nav_item.addEventListener("click", (e) => {
+        nav_items.forEach((item) => {
+          if (item !== nav_item) {
+            item.querySelector(".sub_items").classList.remove("active_item");
+          }
+        });
+        nav_item.querySelector("img").classList.toggle("active_arrow")
+        nav_item.querySelector(".sub_items").classList.toggle("active_item");
+      });
     });
-  });
 
-  const menuBtn = document.querySelector(".menu_button");
-  menuBtn.addEventListener("click", e => {
-    const nav = document.querySelector("nav");
-    const logo = document.querySelector(".intro_logo");
-    const wrapper = document.querySelector(".wrapper");
-    logo.style.display = logo.style.display === 'none' ? '' : 'none';
-    wrapper.style.overflowX = wrapper.style.overflowX === '' || wrapper.style.overflowX === "hidden" ? 'unset' : 'hidden';
-    nav.classList.toggle("active_nav");
-    menuBtn.innerHTML = nav.classList.contains("active_nav")? "✖" : "☰";
-  })
-
-  const navArrows = document.querySelectorAll(".nav_item img");
-  if (window.innerWidth < 955) {
-    navArrows.forEach((element) => {
-      element.src = "images/icon-arrow-dark.svg";
+    const menuBtn = document.querySelector(".menu_button");
+    menuBtn.addEventListener("click", (e) => {
+      const nav = document.querySelector("nav");
+      const logo = document.querySelector(".intro_logo");
+      const wrapper = document.querySelector(".wrapper-intro");
+      logo.style.display = logo.style.display === "none" ? "" : "none";
+      wrapper.style.overflowX =
+        wrapper.style.overflowX === "" || wrapper.style.overflowX === "hidden"
+          ? "unset"
+          : "hidden";
+      nav.classList.toggle("active_nav");
+      menuBtn.innerHTML = nav.classList.contains("active_nav") ? "✖" : "☰";
     });
-  }
-</script>
 
+    const navArrows = document.querySelectorAll(".nav_item img");
+    const editorImg = document.querySelector(".editor_img");
+    const laptopImg = document.querySelector(".laptop_img");
+    if (window.innerWidth < 955) {
+      navArrows.forEach((element) => {
+        element.src = "images/icon-arrow-dark.svg";
+      });
+      editorImg.setAttribute(
+        "src",
+        editorImg.getAttribute("src").replace("desktop", "mobile")
+      );
+      laptopImg.setAttribute(
+        "src",
+        laptopImg.getAttribute("src").replace("desktop", "mobile")
+      );
+    }
+  </script>
 </html>

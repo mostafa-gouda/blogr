@@ -32,7 +32,7 @@ nav {
   text-decoration: underline;
 }
 
-.nav_item:focus-within img {
+.active_arrow {
   transition: all 400ms;
   transform: rotate(180deg);
 }
@@ -87,7 +87,7 @@ nav {
 }
 
 @media only screen and (max-width: 955px) {
-  .wrapper {
+  .wrapper-intro {
     background-size: 300%;
   }
   .container_intro{
@@ -157,7 +157,7 @@ nav {
     padding: 0;
     margin: 0;
     width: 90%;
-    background-color: hsl(0, 8%, 95%);
+    background-color: rgb(243, 243, 243);
   }
 
   .login_btn {
